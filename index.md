@@ -52,6 +52,8 @@
       let intid = null;
       document.querySelector(".napierdalacz").addEventListener("click", () => {
         if (intid) clearInterval(intid);
+      
+      console.log(mcd);
 
         intid = setInterval(() => {
           getPrize(
