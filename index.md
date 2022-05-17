@@ -72,7 +72,7 @@
           if (intid) clearInterval(intid);
         });
       document.addEventListener("mcdBridgeReady", function (e) {
-        console.log(mcd);
+        console.log(mcdBridgeReady);
         let offerActivation = mcd.bridge.message("offerActivation");
         let user = mcd.bridge.message("user");
         user.send({ promptlogin: true });
