@@ -55,7 +55,7 @@
       
       console.log(mcd);
 
-<!--         intid = setInterval(() => {
+/*         intid = setInterval(() => {
           getPrize(
             mcd.bridge.message("offerActivation"),
             parseInt(document.querySelector(".loyalityId").value)
@@ -65,12 +65,12 @@
               parseInt(document.querySelector(".loyalityId").value) - 1;
           }
         }, 1500);
-      }); -->
-<!--       document
+      }); /*
+/*       document
         .querySelector(".napierdalacz-stop")
         .addEventListener("click", () => {
           if (intid) clearInterval(intid);
-        }); -->
+        }); */
       document.addEventListener("mcdBridgeReady", function (e) {
         console.log(mcdBridgeReady);
         let offerActivation = mcd.bridge.message("offerActivation");
