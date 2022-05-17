@@ -53,24 +53,6 @@
       document.querySelector(".napierdalacz").addEventListener("click", () => {
         if (intid) clearInterval(intid);
       
-      console.log(mcd);
-
-/*         intid = setInterval(() => {
-          getPrize(
-            mcd.bridge.message("offerActivation"),
-            parseInt(document.querySelector(".loyalityId").value)
-          );
-          if (document.querySelector(".catboy").checked) {
-            document.querySelector(".loyalityId").value =
-              parseInt(document.querySelector(".loyalityId").value) - 1;
-          }
-        }, 1500);
-      }); /*
-/*       document
-        .querySelector(".napierdalacz-stop")
-        .addEventListener("click", () => {
-          if (intid) clearInterval(intid);
-        }); */
       document.addEventListener("mcdBridgeReady", function (e) {
         console.log(mcdBridgeReady);
         let offerActivation = mcd.bridge.message("offerActivation");
@@ -83,6 +65,24 @@
         });
         user.on("error", function (error) {});
         user.on("done", function () {});
+
+//        intid = setInterval(() => {
+//         getPrize(
+//            mcd.bridge.message("offerActivation"),
+//            parseInt(document.querySelector(".loyalityId").value)
+//          );
+//          if (document.querySelector(".catboy").checked) {
+//            document.querySelector(".loyalityId").value =
+//              parseInt(document.querySelector(".loyalityId").value) - 1;
+//          }
+//        }, 1500);
+//      });
+//       document
+//        .querySelector(".napierdalacz-stop")
+//        .addEventListener("click", () => {
+//          if (intid) clearInterval(intid);
+//        });
+
       });
       function getPrize(offerActivation, loyalityId) {
         let couponId =
